@@ -1,0 +1,181 @@
+<div class="wrapper">
+    <div class="page-header section-dark" style="background-image: url('assets/img/pexels.jpg')">
+        <div class="filter"></div>
+        <div class="content-center">
+            <div class="container">
+                <div class="title-brand">
+                    <h1 class="presentation-title">ALO VELO</h1>
+                </div>
+            </div>
+        </div>
+        <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
+    </div>
+    <div class="main">
+        <div class="section" id="carousel">
+            <div class="container">
+                <div class="tim-title">
+                    <h3>Nos produits</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 mr-auto ml-auto">
+                        <div class="card page-carousel">
+                            <ngb-carousel>
+                                <ng-template ngbSlide>
+                                    <img src="./assets/img/guemma.jpg" alt="Random first slide">
+                                    <div class="carousel-caption">
+                                        <p></p>
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <img src="./assets/img/murillo.jpg" alt="Random second slide">
+                                    <div class="carousel-caption">
+                                        <p></p>
+                                    </div>
+                                </ng-template>
+                                <ng-template ngbSlide>
+                                    <img src="./assets/img/robert.jpg" alt="Random third slide">
+                                    <div class="carousel-caption">
+                                        <p></p>
+                                    </div>
+                                </ng-template>
+                            </ngb-carousel>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section javascript-components">
+            <div class="container">
+                <div class="tim-title">
+                    <h2>Louer un vélo</h2>
+                </div>
+                <div class="row" id="modals">
+                    <div class="col-md-6">
+                        <div class="tim-title">
+                            <h3>Ajout vélo ADMIN</h3>
+                        </div>
+                        <app-modal-component></app-modal-component>
+                    </div>
+
+                    <br />
+                    <div class="col-md-6">
+                        <div class="tim-title">
+                            <h3>Location de vélo</h3>
+                        </div>
+                        <app-location></app-location>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-dark section-nucleo-icons">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <h2 class="title">Missions</h2><br />
+                        <p class="description">
+                            La Tunisie se découvre à vélo !
+                            Notre pays offre des itinéraires magnifiques à faire à vélo.
+                            Année après année, les infrastructures s'améliorent et l'offre de services progresse.
+                            C'est dans ce cadre qu'est né ALO VELO.
+                            Aujourd'hui, grâce à la force de notre réseau, il n'a jamais été aussi facile de louer des
+                            vélos où que l'on aille en Tunisie.
+                            Avec Alovelo.tn, vous pouvez louer des vélos où voulez, quand vous voulez.
+                            Vous pouvez louer tout type de vélo : vélo électrique, vélo de randonnée, VTT
+                        </p><br />
+                        <a [routerLink]="['/landing']" class="btn btn-primary btn-round">Contactez-nous</a>
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="icons-container">
+                            <i class="nc-icon nc-time-alarm"></i>
+                            <i class="nc-icon nc-atom"></i>
+                            <i class="nc-icon nc-map-big"></i>
+                            <i class="nc-icon nc-watch-time"></i>
+                            <i class="nc-icon nc-key-25"></i>
+                            <i class="nc-icon nc-diamond" style="color: #1ccddf;"></i>
+                            <i class="nc-icon nc-user-run"></i>
+                            <i class="nc-icon nc-planet"></i>
+                            <i class="nc-icon nc-badge"></i>
+                            <i class="nc-icon nc-bulb-63"></i>
+                            <i class="nc-icon nc-favourite-28"></i>
+                            <br>
+                            <i class="nc-icon nc-tie-bow"></i>
+                            <i class="nc-icon nc-zoom-split"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <h2 class="title">Mission et vision</h2>
+                        <p class="description">
+                            <b> Vélo de loisir et de la vie quotidienne.</b>
+                            Notre mission est de vous offrir l'opportunité de
+                            louer un vélo pour une balade en ville ou pour vos déplacements . Circulons avec un moyen de
+                            transport vert et protégeons notre environnement ! <br>
+                            ALO VELO est une solution pour les contraintes écologique que vit notre
+                            époque, l'utilisation d'un moyen de transport plus vert ne pourra qu'améliorer notre avenir.
+                            Le vélo est une excellente alternative à ce problème universelle . <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-image section-login" style="background-image: url('assets/img/tony.jpg');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 ml-auto mr-auto">
+                        <div class="card card-register" style="background-color: #1d2637;">
+                            <h3 class="title">Bienvenue</h3>
+
+                            <form class="register-form">
+                                <label>Email</label>
+                                <div class="input-group form-group-no-border"
+                                    [ngClass]="{'input-group-focus':focus===true}">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="nc-icon nc-email-85"></i>
+                                        </span>
+                                    </div>
+
+                                    <input type="text" class="form-control" placeholder="Email" (focus)="focus=true"
+                                        (blur)="focus=false">
+                                </div>
+
+                                <label>Mot de passe</label>
+                                <div class="input-group form-group-no-border"
+                                    [ngClass]="{'input-group-focus':focus1===true}">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="nc-icon nc-key-25"></i>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Password" (focus)="focus1=true"
+                                        (blur)="focus1=false">
+                                </div>
+                                <button class="btn btn-primary btn-block btn-round">Connexion</button>
+                            </form>
+                            <div class="forgot">
+                                <a href="#" class="btn btn-link btn-primary">Mot de passe oublié?</a>
+                            </div>
+                        </div>
+                        <div class="col text-center" routerLinkActive="active">
+                            <a [routerLink]="['/user-profile']"
+                                class="btn btn-outline-neutral btn-round btn-lg">Création de
+                                compte</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
